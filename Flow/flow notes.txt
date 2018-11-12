@@ -1,0 +1,8 @@
+1. Flow with edge demand: 
+
+Feasible Flow steps:
+a. for each edge u->v, add edge (u,v,c-l), (ss,v,l) , (u,tt,l)
+b. if ther are nodes s,t with - and + demand, add (t,s,INF)
+c. if maxflow(ss,tt)=sum(l), feasible flow exists
+d. feasible flow for u->v is flow in u->v + l
+e. maximum (s,t) flow can be obtained by max (s,t) flow on current graph
